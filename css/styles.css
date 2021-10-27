@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("DMSans-Bold.woff2") format("woff2"),
+        url("DMSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url("Mulish-Regular.woff2") format("woff2"),
+        url("Mulish-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +38,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Mulish", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 1.5;
   background-color: #fff;
-  color: #222;
+  color: #696871;
 }
 
 img {
@@ -44,4 +66,337 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* SITE-HEADER */
+
+.site-header{
+  padding-top: 30px;
+}
+
+.site-header-items {
+  display: flex;
+  align-items: center;
+}
+.site-header-logo {
+  margin-right: auto;
+}
+.logo-img {
+  width: 200px;
+  height: 40px;
+}
+.site-nav {
+}
+.site-nav-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-right: 158px;
+}
+.site-nav-item {
+  padding: 0;
+}
+
+.site-nav-item:not(:last-child){
+  margin-right: 50px;
+}
+
+.site-nav-link {
+  display: flex;
+  text-decoration: none;
+  font-family: "DM Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #696871;
+}
+
+.active{
+  color: #19191b;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #5454d4;
+}
+
+.site-button-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: "DM Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  padding: 19px 60px;
+  border-radius: 10px;
+  background-color: #ff7143;
+}
+
+/* SITE-HERO */
+
+
+.site-hero {
+
+}
+.site-hero-top {
+  margin: 0;
+  margin-top: 100px;
+  background-image: url(../img/hero-top.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+.site-hero-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-hero-item{
+  width: 450px;
+}
+
+.hero-heading-top {
+  font-family: "DM Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 77px;
+  margin-bottom: 30px;
+  color: #19191b;
+
+}
+.hero-text {
+  color: #696871;
+  margin-bottom: 50px;
+}
+
+.hero-button {
+  background-color: #5454d4;
+}
+
+.hero-button::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/arrow-down.svg);
+  background-repeat: no-repeat;
+}
+
+/* SITE-BRAND */
+
+.site-brand {
+  margin-top: 100px;
+}
+
+.site-brand-items {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+.site-brand-item {
+}
+
+.site-brand-item:not(:last-child){
+  margin-right: 120px;
+}
+
+/* HERO-MIDDLE */
+
+.site-hero-middle {
+  margin-top: 150px;
+}
+
+.site-hero-items-middle {
+  display: flex;
+  align-items: center;
+}
+
+.hero-middle-img {
+  margin-right: 166px;
+}
+.middle-img {
+  width: 349px;
+  height: 473px;
+}
+
+
+.site-hero-middle-item {
+  width: 460px;
+}
+.hero-heading-middle {
+  font-family: "DM Sans", "Arial", sans-serif;
+  font-size: 50px;
+  line-height: 57px;
+  font-weight: 700;
+  color: #19191b;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.hero-text-middle{
+  margin: 0;
+}
+
+.site-button-middle {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "DM Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #5454d4;
+  margin-top: 30px;
+}
+
+/* SITE-BOTTOM */
+
+.site-hero-bottom {
+  margin-top: 85px;
+}
+
+.site-hero-items-bottom {
+  display: flex;
+  align-items: center;
+}
+.site-hero-middle-item {
+  width: 460px;
+  margin-right: 160px;
+}
+
+.bottom-img {
+  width: 347px;
+  height: 474px;
+}
+
+/* SITE-SERVICES */
+.site-services {
+}
+.site-service {
+  margin-top: 150px;
+}
+.site-service-items {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+.site-service-item {
+  text-align: center;
+}
+
+.site-service-item:not(:last-child){
+  margin-right: 74px;
+}
+
+.service-heading {
+  font-family: "DM Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #19191b;
+}
+.service-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* SERVICE-DURATION */
+
+.site-service-duration {
+  display: flex;
+  align-items: center;
+}
+
+.basket-heading{
+  width: 523px;
+  margin-right: 250px;
+}
+
+.service-duration-heading {
+  font-family: "DM Sans", "Arial", sans-serif;
+  letter-spacing: -2px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #19191b;
+}
+
+.bottom-link{
+  background-color: #f7f7fb;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.duration-link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "DM Sans", "Arial", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  padding: 18px 30px;
+  background-color: #f7f7fb;
+  color: #19191b;
+}
+
+.duration-link-active {
+  border-radius: 10px 0px 0px 10px;
+  background-color: #5454d4;
+  color: #fff;
+}
+
+/* DEFINITIONS */
+
+
+.site-definitions {
+}
+.definitions-site {
+}
+.definitions-items {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+.definitions-item {
+  width: 330px;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.definitions-item:nth-child(2){
+  width: 376px;
+  background-color: #ff7143;
+  color: #fff;
+}
+
+.definitions-item:hover{
+  background-color: #ff7143;
+  color: #fff;
+}
+
+/* .definitions-item:not(:last-child){
+  margin-right: 18px;
+} */
+.definitions-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.definitions-value {
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 28px;
+  font-family: "DM Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  color: #1d293f;
+}
+
+
+.value-small{
+  font-size: 28px;
 }
