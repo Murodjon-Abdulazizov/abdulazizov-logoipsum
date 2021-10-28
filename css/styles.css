@@ -79,21 +79,23 @@ img {
   display: flex;
   align-items: center;
 }
+
 .site-header-logo {
   margin-right: auto;
 }
+
 .logo-img {
   width: 200px;
   height: 40px;
 }
-.site-nav {
-}
+
 .site-nav-items {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin-right: 158px;
 }
+
 .site-nav-item {
   padding: 0;
 }
@@ -110,6 +112,16 @@ img {
   font-size: 15px;
   line-height: 20px;
   color: #696871;
+}
+
+.site-nav-link:hover{
+  color: #19191b;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #5454d4;
+}
+
+.site-nav-link:active{
+  opacity: 0.7;
 }
 
 .active{
@@ -131,12 +143,17 @@ img {
   background-color: #ff7143;
 }
 
+.site-button-link:hover{
+  opacity: 0.8;
+}
+
+.site-button-link:active{
+  opacity: 0.6;
+}
+
 /* SITE-HERO */
 
 
-.site-hero {
-
-}
 .site-hero-top {
   margin: 0;
   margin-top: 100px;
@@ -164,6 +181,7 @@ img {
   color: #19191b;
 
 }
+
 .hero-text {
   color: #696871;
   margin-bottom: 50px;
@@ -193,8 +211,6 @@ img {
   list-style-type: none;
   padding: 0;
 }
-.site-brand-item {
-}
 
 .site-brand-item:not(:last-child){
   margin-right: 120px;
@@ -214,6 +230,7 @@ img {
 .hero-middle-img {
   margin-right: 166px;
 }
+
 .middle-img {
   width: 349px;
   height: 473px;
@@ -223,6 +240,7 @@ img {
 .site-hero-middle-item {
   width: 460px;
 }
+
 .hero-heading-middle {
   font-family: "DM Sans", "Arial", sans-serif;
   font-size: 50px;
@@ -269,17 +287,18 @@ img {
 }
 
 /* SITE-SERVICES */
-.site-services {
-}
+
 .site-service {
   margin-top: 150px;
 }
+
 .site-service-items {
   display: flex;
   align-items: center;
   list-style-type: none;
   padding: 0;
 }
+
 .site-service-item {
   text-align: center;
 }
@@ -295,6 +314,7 @@ img {
   line-height: 36px;
   color: #19191b;
 }
+
 .service-text {
   font-size: 16px;
   line-height: 24px;
@@ -344,19 +364,19 @@ img {
   color: #fff;
 }
 
+
 /* DEFINITIONS */
 
-
-.site-definitions {
-}
 .definitions-site {
 }
+
 .definitions-items {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
 }
+
 .definitions-item {
   width: 330px;
   text-align: center;
@@ -376,9 +396,6 @@ img {
   color: #fff;
 }
 
-/* .definitions-item:not(:last-child){
-  margin-right: 18px;
-} */
 .definitions-text {
   font-size: 18px;
   line-height: 28px;
@@ -399,4 +416,29 @@ img {
 
 .value-small{
   font-size: 28px;
+}
+
+.defitions-link{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #5454d4 ;
+  background-color: #fff;
+  font-family: "DM Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  padding: 19px 42px;
+  border-radius: 10px;
+}
+
+.defitions-link:hover{
+  background-color: #9f3919;
+  color: #fff;
+}
+
+.defitions-link-active{
+  background-color: #9f3919;
+  color: #fff;
 }
